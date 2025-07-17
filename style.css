@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 20px;
+    width: 100%;
+}
+.menu-search-icon i{
+   display: none;
+}
+.logo img{
+ height: 40px;
+
+}
+#slider{
+    font-weight: bold;
+}
+.user-cart i{
+   padding: 10px 20px;
+   font-size: 20px;
+}
+.navbar{
+    padding: 20px;
+      display: flex;
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+nav ul{
+   display: flex; 
+   
+}
+nav ul li{
+    list-style: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-right: 15px;
+
+}
+
+nav ul li input{
+   border: none;
+   border-bottom: 1px solid #000;
+   padding: -10px;
+}
+.banner{
+    width: 100%;
+}
+.banner-2{
+     width: 100%;
+     
+}
+.banner-landscape{
+    width: 100%;
+}
+
+.banner-portrait{
+   width: 100%;
+    display: none;
+}
+.cards{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 5px;
+    
+}
+.cards > img{
+    width: 420px;
+    flex-wrap: wrap;
+}
+
+.banner-2 img{
+    margin-top: 20px;
+    width: 100%;
+}
+.product-slipers{
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    overflow-x: scroll;
+}
+.pr1>img{
+   width: 300px;
+    
+    
+}
+
+.description{
+    text-align: center;
+    font-family: sans-serif;
+    line-height: 30px;
+}
+.description>h1{
+    font-size: 16px;
+}
+.description>p>b{
+    color: blueviolet;
+}
+
+/* ---For Mobiles screen------------- */
+@media screen and (max-width: 600px) {
+   .menu-search-icon i{
+   display: flex;
+   flex-direction: row;
+    padding: 10px 10px;
+   font-size: 20px;
+} 
+.user-cart i{
+   padding: 10px 10px;
+   font-size: 20px;
+}
+#srch{
+    display: none;
+}
+.navbar{
+    display: none;
+}
+.banner-landscape{
+    display: none;
+}
+.banner-portrait{
+   width: 100%;
+   display: inherit;
+}
+.cards img{
+    width: 100%;
+    
+    
+}
+
+
+}
+/* -------------- For Tablets Screen----------------------- */
+@media screen and (max-width: 768px) {
+   .banner-portrait{
+   width: 100%;
+   
+} 
+.navbar{
+   width: 100%;
+   font-size: 12px;
+   word-wrap: wrap;
+}
+nav ul{
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+nav ul li{
+padding: 10px;
+}
+.cards > img{
+    width: 40%;
+    
+}
+}
+/* -------------- For Laptop Screen----------------------- */
+/* @media screen and (max-width: 992px){
+
+} */
